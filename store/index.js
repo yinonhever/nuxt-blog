@@ -78,7 +78,7 @@ const createStore = () => new Vuex.Store({
                 localStorage.setItem("token", idToken);
                 localStorage.setItem("expirationDate", expirationDate);
 
-                const res = await axios.post("https://nuxt-blog-kdq9u09u1.vercel.app/api/track-data", { data: "Authenticated" });
+                const res = await axios.post("https://nuxt-blog-five.vercel.app/api/track-data", { data: "Authenticated" });
                 console.log(res);
             } catch (error) {
                 console.log(error);
